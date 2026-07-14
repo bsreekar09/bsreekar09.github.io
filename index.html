@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sreekar Chandan B | Sales Enablement Audit Reports</title>
+<title>Sreekar Chandan B | Sales Enablement Audit Library</title>
 
 <style>
 
@@ -15,143 +15,150 @@
 }
 
 body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    background:#f5f7fb;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:#f5f7fa;
     color:#222;
 }
 
 .hero{
-    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+
+    background:linear-gradient(135deg,#0F172A,#1E40AF);
+
     color:white;
+
     padding:70px 20px;
+
     text-align:center;
+
 }
 
 .hero h1{
+
     font-size:48px;
-    margin-bottom:15px;
+
+    margin-bottom:10px;
+
 }
 
 .hero h2{
-    font-size:22px;
+
     font-weight:400;
+
     color:#dbeafe;
-    margin-bottom:25px;
+
+    margin-bottom:20px;
+
 }
 
 .hero p{
-    max-width:800px;
+
+    max-width:900px;
+
     margin:auto;
+
     line-height:1.8;
+
     color:#d1d5db;
-    font-size:17px;
+
 }
 
 .container{
-    max-width:1000px;
-    margin:auto;
-    padding:60px 20px;
+
+    width:95%;
+
+    max-width:1200px;
+
+    margin:50px auto;
+
 }
 
-.section-title{
-    font-size:34px;
-    margin-bottom:35px;
-    text-align:center;
-    color:#0f172a;
+.search{
+
+    width:100%;
+
+    padding:16px;
+
+    font-size:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    margin-bottom:30px;
+
 }
 
-.audit-card{
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
 
     background:white;
-    border-radius:14px;
-    padding:28px;
 
-    margin-bottom:25px;
+    border-radius:12px;
 
-    box-shadow:
-    0 5px 18px rgba(0,0,0,.06);
+    overflow:hidden;
 
-    transition:.25s;
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+
 }
 
-.audit-card:hover{
+th{
 
-    transform:translateY(-6px);
+    background:#1E3A8A;
 
-    box-shadow:
-    0 12px 30px rgba(0,0,0,.12);
+    color:white;
+
+    padding:16px;
+
+    text-align:left;
+
 }
 
-.audit-card h3{
+td{
 
-    color:#1e3a8a;
-    margin-bottom:10px;
+    padding:16px;
 
-    font-size:24px;
+    border-bottom:1px solid #eee;
+
 }
 
-.audit-card p{
+tr:hover{
 
-    color:#555;
-    line-height:1.6;
+    background:#f8fbff;
 
-    margin-bottom:20px;
 }
 
 .button{
 
-    display:inline-block;
+    text-decoration:none;
 
-    background:#2563eb;
+    background:#2563EB;
 
     color:white;
 
-    text-decoration:none;
+    padding:8px 16px;
 
-    padding:12px 22px;
-
-    border-radius:8px;
+    border-radius:6px;
 
     font-weight:600;
 
-    transition:.2s;
 }
 
 .button:hover{
 
-    background:#1d4ed8;
+    background:#1D4ED8;
+
 }
 
 footer{
 
     text-align:center;
 
-    padding:40px;
-
-    background:white;
-
-    margin-top:60px;
+    margin:60px 0;
 
     color:#666;
-
-    border-top:1px solid #ddd;
-}
-
-.badge{
-
-    display:inline-block;
-
-    background:#e0ecff;
-
-    color:#1e40af;
-
-    padding:6px 14px;
-
-    border-radius:25px;
-
-    font-size:14px;
-
-    margin-bottom:15px;
 
 }
 
@@ -163,106 +170,176 @@ footer{
 
 <section class="hero">
 
-<div class="badge">
-Sales Enablement Specialist
-</div>
-
 <h1>Sreekar Chandan B</h1>
 
-<h2>Sales Enablement Audit Portfolio</h2>
+<h2>Sales Enablement Specialist</h2>
 
 <p>
-I help organizations evaluate, optimize, and strengthen their sales enablement
-ecosystems through structured audits of processes, tools, content, onboarding,
-training, CRM adoption, and operational effectiveness.
 
-This repository showcases sample audit reports conducted across different
-organizations.
+This repository contains Sales Enablement Audit reports covering
+sales onboarding, CRM adoption, enablement processes,
+content governance, GTM readiness, and operational effectiveness.
+
 </p>
 
 </section>
 
 <div class="container">
 
-<h2 class="section-title">Audit Reports</h2>
+<input
+type="text"
+id="search"
+class="search"
+placeholder="🔍 Search by company, industry, or audit type..."
+onkeyup="searchTable()">
 
-<div class="audit-card">
+<table id="auditTable">
 
-<h3>Imprint</h3>
+<thead>
 
-<p>
-Sales Enablement Audit focusing on onboarding, sales processes,
-content utilization, CRM adoption, and enablement maturity.
-</p>
+<tr>
 
+<th>Company</th>
+<th>Industry</th>
+<th>Audit Type</th>
+<th>Year</th>
+<th>Report</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<!-- ===================================================== -->
+<!--                  AUDIT REPORTS START                  -->
+<!-- ===================================================== -->
+
+<tr>
+
+<td>Imprint</td>
+<td>FinTech</td>
+<td>Sales Enablement</td>
+<td>2025</td>
+
+<td>
 <a class="button"
 href="reports/imprintaudit.pdf"
 target="_blank">
-📄 View Audit Report
+View PDF
 </a>
+</td>
 
-</div>
+</tr>
 
-<div class="audit-card">
+<tr>
 
-<h3>i2c</h3>
+<td>Marqeta</td>
+<td>FinTech</td>
+<td>Sales Enablement</td>
+<td>2025</td>
 
-<p>
-Sales Enablement Audit assessing sales workflows,
-enablement assets, coaching practices, and performance readiness.
-</p>
-
-<a class="button"
-href="reports/audit3i2c.pdf"
-target="_blank">
-📄 View Audit Report
-</a>
-
-</div>
-
-<div class="audit-card">
-
-<h3>Marqeta</h3>
-
-<p>
-Comprehensive audit covering sales enablement strategy,
-technology adoption, documentation, and operational effectiveness.
-</p>
-
+<td>
 <a class="button"
 href="reports/audit2marqeta.pdf"
 target="_blank">
-📄 View Audit Report
+View PDF
 </a>
+</td>
 
-</div>
+</tr>
 
-<div class="audit-card">
+<tr>
 
-<h3>Treasure Prime</h3>
+<td>i2c</td>
+<td>Payments</td>
+<td>Sales Enablement</td>
+<td>2025</td>
 
-<p>
-Sales Enablement Audit evaluating onboarding,
-sales content governance, CRM utilization, and enablement programs.
-</p>
+<td>
+<a class="button"
+href="reports/audit3i2c.pdf"
+target="_blank">
+View PDF
+</a>
+</td>
 
+</tr>
+
+<tr>
+
+<td>Treasure Prime</td>
+<td>Banking</td>
+<td>Sales Enablement</td>
+<td>2025</td>
+
+<td>
 <a class="button"
 href="reports/audit4treasureprime.pdf"
 target="_blank">
-📄 View Audit Report
+View PDF
 </a>
+</td>
 
-</div>
+</tr>
+
+<!-- ===================================================== -->
+<!--                   AUDIT REPORTS END                   -->
+<!-- ===================================================== -->
+
+</tbody>
+
+</table>
 
 </div>
 
 <footer>
 
-<strong>Sreekar Chandan B</strong><br>
+<b>Sreekar Chandan B</b><br>
 
 Sales Enablement Specialist
 
 </footer>
+
+<script>
+
+function searchTable() {
+
+let input = document.getElementById("search");
+
+let filter = input.value.toUpperCase();
+
+let table = document.getElementById("auditTable");
+
+let tr = table.getElementsByTagName("tr");
+
+for (let i = 1; i < tr.length; i++) {
+
+let found = false;
+
+let td = tr[i].getElementsByTagName("td");
+
+for (let j = 0; j < td.length; j++) {
+
+if (td[j]) {
+
+if (td[j].textContent.toUpperCase().indexOf(filter) > -1) {
+
+found = true;
+
+}
+
+}
+
+}
+
+tr[i].style.display = found ? "" : "none";
+
+}
+
+}
+
+</script>
 
 </body>
 </html>
